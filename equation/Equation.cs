@@ -6,35 +6,35 @@ using System.Threading.Tasks;
 
 namespace equation
 {
-    class Equation
+    public class Equation
     {
-        private double[] _coef;
+        public double[] coef;
 
         public Equation(double[] coef) {
-            _coef = coef;
+            this.coef = coef;
         }
 
         public List<Complex> Solve() {
-            int p=this._coef.Length-1;
-            return p==1?FirstPower(this):p==2?SecondPower(this)
+            int p=this.coef.Length-1;
+            return p == 1 ? FirstPower(this) : p == 2 ? SecondPower(this) : p == 3 ? ThirdPower(this) :new List<Complex>();
         }
 
         private List<Complex> FirstPower(Equation eq) {
             List<Complex> solution = new List<Complex>();
-            solution.Add(new Complex(eq._coef[0] / (-1 * eq._coef[1]), 0.0));
+            solution.Add(new Complex(eq.coef[0] / (-1 * eq.coef[1]), 0.0));
             return solution;
         }
 
         private List<Complex> SecondPower(Equation eq) {
             List<Complex> solution = new List<Complex>();
-            double d = eq._coef[1] * eq._coef[1] - 4 * eq._coef[0] * eq._coef[2];
+            double d = eq.coef[1] * eq.coef[1] - 4 * eq.coef[0] * eq.coef[2];
             if (d >= 0){
-                solution.Add((-1 * eq._coef[1] - Math.Sqrt(d) / (2 * eq._coef[2]),0.0));
-                solution.Add((-1 * eq._coef[1] + Math.Sqrt(d) / (2 * eq._coef[2]),0.0));
+                solution.Add(new Complex(-1 * eq.coef[1] - Math.Sqrt(d) / (2 * eq.coef[2]),0.0));
+                solution.Add(new Complex(-1 * eq.coef[1] + Math.Sqrt(d) / (2 * eq.coef[2]),0.0));
             }
             else {
-                solution.Add(new Complex((-1 * eq._coef[1] / (2 * eq._coef[2])),Math.Sqrt(-1 * d) / (2 * eq._coef[2])));
-                solution.Add(new Complex((-1 * eq._coef[1] / (2 * eq._coef[2])),-1*Math.Sqrt(-1 * d) / (2 * eq._coef[2])));
+                solution.Add(new Complex((-1 * eq.coef[1] / (2 * eq.coef[2])),Math.Sqrt(-1 * d) / (2 * eq.coef[2])));
+                solution.Add(new Complex((-1 * eq.coef[1] / (2 * eq.coef[2])),-1*Math.Sqrt(-1 * d) / (2 * eq.coef[2])));
             }
             return solution;
         }
@@ -43,10 +43,10 @@ namespace equation
         {
             List<Complex> solution=new List<Complex>();
 
-            double p = (3 * eq._coef[3] * eq._coef[1] - eq._coef[2] * eq._coef[2]) / (3 * eq._coef[3] * eq._coef[3]);
-            double q = (2 * eq._coef[2] * eq._coef[2] * eq._coef[2] - 9 * eq._coef[3] * eq._coef[2] * eq._coef[1] + 27 * eq._coef[3] * eq._coef[3] * eq._coef[0]) / (27 * eq._coef[3] * eq._coef[3] * eq._coef[3]);
+            double p = (3 * eq.coef[3] * eq.coef[1] - eq.coef[2] * eq.coef[2]) / (3 * eq.coef[3] * eq.coef[3]);
+            double q = (2 * eq.coef[2] * eq.coef[2] * eq.coef[2] - 9 * eq.coef[3] * eq.coef[2] * eq.coef[1] + 27 * eq.coef[3] * eq.coef[3] * eq.coef[0]) / (27 * eq.coef[3] * eq.coef[3] * eq.coef[3]);
             double Q = Math.Pow((p / 3.0), 3.0) + Math.Pow((q / 2.0), 2.0);
-            double zam = -(eq._coef[2] / (3 * eq._coef[3]));
+            double zam = -(eq.coef[2] / (3 * eq.coef[3]));
             string[] a = new string[3];
             if (Q < 0) {
                 Q = Q * (-108);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace equation
 {
-    class Complex
+    public class Complex
     {
         private double _real;
         private double _im;
@@ -15,6 +15,7 @@ namespace equation
             _real = real;
             _im = im;
         }
+        
 
         public static Complex operator +(Complex a, Complex b)
         {
