@@ -130,7 +130,9 @@ namespace equation
             Equation eq = new Equation(arr);
             
             List<Complex> resh=eq.Solve();
-            
+
+            bool check = eq.Check(resh,eq);
+
             Print(resh);
             
         }

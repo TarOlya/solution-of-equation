@@ -38,5 +38,21 @@ namespace equation
         public static implicit operator Complex(double x) {
             return new Complex(x, 0.0);
         }
+
+        public override string ToString()
+        {
+            return this._im!=0.0?String.Format("{0:0.###}{1}{2:0.###}*i",this._real,this._im<0?"-":"+",this._im):String.Format("{0:0.###}",this._real);
+        }
+
+        public static Complex Pow(Complex a, double b) {
+            Complex c = new Complex(1,1);
+            for (int i = 0; i < b; i++)
+            {
+                c *= a;
+            }
+            return c;
+        }
+
+        //need equals
     }
 }

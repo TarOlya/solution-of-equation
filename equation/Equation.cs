@@ -74,7 +74,10 @@ namespace equation
             }
             else if (Math.Round(Q) == 0)
             {
-                
+                double alfa = Sqrt3(-1 * q / 2 + Math.Sqrt(Q))+zam;
+                solution.Add(new Complex(2 * alfa, 0.0));
+                solution.Add(new Complex(-1 * alfa, 0.0));
+                solution.Add(new Complex(-1 * alfa, 0.0));
             }
 
             return solution;
@@ -83,6 +86,25 @@ namespace equation
         public static double Sqrt3(double x)
         {
             return Math.Sign(x) * Math.Pow(Math.Abs(x), 1 / 3.0);
+        }
+
+
+        //i dont sure 
+        public  bool Check(List<Complex> answer, Equation eq) {
+            Complex check = 0.0;
+            for (int i = 0; i < answer.Count; i++)
+            {
+                check = 0.0;
+                for (int j = 0; j < eq.coef.Length; j++)
+                {
+                    check += eq.coef[j] * Complex.Pow(answer[i],j);
+                }
+                if (check != new Complex(0.0, 0.0)) {//error
+                    return false;
+                }
+            }
+            return true;
+
         }
     }
 }
