@@ -2,70 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c9f0931-5bca-464b-a62d-a92558c752a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.equation/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.equation/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.equation/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/equation/v15/.suo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/equation/v15/Server/sqlite3/db.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/equation/v15/Server/sqlite3/storage.ide" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/equation/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/equation/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation.suo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Complex.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Equation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Form1.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Form1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Form1.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Properties/AssemblyInfo (1).cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Properties/Resources.Designer (1).cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Properties/Resources.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Properties/Resources.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Properties/Settings.Designer (1).cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Properties/Settings.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/Properties/Settings.settings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/bin/Debug/System.Numerics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/bin/Debug/equation.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/bin/Debug/equation.exe.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/bin/Debug/equation.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/bin/Debug/equation.vshost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/bin/Debug/equation.vshost.exe.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/bin/Debug/equation.vshost.exe.manifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/equat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/equation.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/DesignTimeResolveAssemblyReferences.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.Form1.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.Properties.Resources.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csproj.FileListAbsolute(1)(1).docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csproj.FileListAbsolute(1)(2)(1).docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csproj.FileListAbsolute(1)(2).docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csproj.FileListAbsolute(1).docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csproj.FileListAbsolute(2).docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csproj.FileListAbsolute.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csproj.GenerateResource.Cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.csprojResolveAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/GenerateResource.read.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/GenerateResource.write.1.tlog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/equation.Form1.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/equation.Properties.Resources.resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/equation.csproj.FileListAbsolute.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/equation.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/obj/x86/Debug/equation.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equation/solveEquation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solution-of-equation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.equation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.equation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/equation/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/equation/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/equation/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/equation/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/equation/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/equation/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation/Complex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/equation/Complex.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation/Equation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/equation/Equation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/equation/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation/bin/Debug/equation.exe" beforeDir="false" afterPath="$PROJECT_DIR$/equation/bin/Debug/equation.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation/bin/Debug/equation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/equation/bin/Debug/equation.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation/obj/Debug/equation.exe" beforeDir="false" afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation/obj/Debug/equation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/equation/obj/Debug/equation.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,19 +54,30 @@
     <session id="-1544491005">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.76" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="111" />
+          <entry key="cs" value="1084" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="111" />
+          <entry key="C#" value="1084" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -129,23 +87,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/equation/Equation.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+            <state relative-caret-position="99">
+              <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
               <folding>
-                <marker date="1543827297986" expanded="false" signature="6:115" ph="..." />
-                <marker date="1543827297986" expanded="true" signature="135:3332" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="163:3330" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="240:281" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="320:433" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="489:663" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="720:1381" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="881:1070" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="1070:1342" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="1436:3184" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="2014:2532" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="2558:3058" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="3099:3144" ph="{...}" />
-                <marker date="1543827297986" expanded="true" signature="3238:3324" ph="{...}" />
+                <marker date="1544574647166" expanded="false" signature="6:115" ph="..." />
+                <marker date="1544574647166" expanded="true" signature="135:5779" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="163:5777" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="239:289" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="327:586" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="641:824" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="880:1624" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="1050:1276" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="1293:1584" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="1679:3692" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="2282:2818" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="2846:3337" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="3378:3652" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="3773:4372" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="4053:4333" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="4186:4286" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="4418:4504" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="4567:5065" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="4661:5029" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="4761:4866" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="4919:5015" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="5114:5320" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="5207:5287" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="5387:5771" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="5531:5595" ph="{...}" />
+                <marker date="1544574647166" expanded="true" signature="5616:5680" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -154,25 +124,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/equation/Form1.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2175">
-              <caret line="153" column="46" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
+            <state relative-caret-position="130">
+              <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
               <folding>
-                <marker date="1543827364440" expanded="false" signature="6:183" ph="..." />
-                <marker date="1543827364440" expanded="true" signature="203:5133" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="243:5131" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="272:885" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="969:3202" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="1058:3192" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="3266:3734" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="3610:3711" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="3798:4213" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="3949:4050" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="4257:4429" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="4345:4419" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="4470:4983" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="4720:4973" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="4814:4901" ph="{...}" />
-                <marker date="1543827364440" expanded="true" signature="5029:5115" ph="{...}" />
+                <marker date="1544573414998" expanded="false" signature="6:183" ph="..." />
+                <marker date="1544573414998" expanded="true" signature="203:5433" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="243:5431" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="272:885" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="969:3202" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="1058:3192" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="3266:3804" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="3610:3711" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="3868:4495" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="4019:4120" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="4182:4376" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="4293:4362" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="4417:4484" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="4539:4711" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="4627:4701" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="4757:4861" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="4902:5415" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="5152:5405" ph="{...}" />
+                <marker date="1544573414998" expanded="true" signature="5246:5333" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -181,26 +154,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/equation/Complex.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="129">
+              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
               <folding>
-                <marker date="1543827087517" expanded="false" signature="6:115" ph="..." />
-                <marker date="1543827087517" expanded="true" signature="135:1160" ph="{...}" />
-                <marker date="1543827087517" expanded="true" signature="162:1158" ph="{...}" />
-                <marker date="1543827087517" expanded="true" signature="275:334" ph="{...}" />
-                <marker date="1543827087517" expanded="true" signature="407:493" ph="{...}" />
-                <marker date="1543827087517" expanded="true" signature="556:642" ph="{...}" />
-                <marker date="1543827087517" expanded="true" signature="707:808" ph="{...}" />
-                <marker date="1543827087517" expanded="true" signature="874:1041" ph="{...}" />
-                <marker date="1543827087517" expanded="true" signature="1101:1152" ph="{...}" />
+                <marker date="1544570334718" expanded="false" signature="6:115" ph="..." />
+                <marker date="1544570334718" expanded="true" signature="135:2490" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="162:2488" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="275:334" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="407:493" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="556:642" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="707:808" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="874:1041" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="1101:1152" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="1195:1379" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="1436:1603" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="1519:1571" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="1664:1754" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="1816:1899" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="1959:2040" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="2101:2184" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="2245:2337" ph="{...}" />
+                <marker date="1544570334718" expanded="true" signature="2398:2481" ph="{...}" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/equation/Form1.resx">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -220,8 +197,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/equation/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E91BA91-5FC5-40E7-8215-4539A1BBBCA3/82/4d140f99/DataGridView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/equation/Complex.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/234F0A13-016A-4580-8C1B-83FC70207998/79/ec9a72f3/ArgumentException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/equation/Equation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/234F0A13-016A-4580-8C1B-83FC70207998/6c/bfa7c3ab/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/equation/Form1.resx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/equation/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -229,8 +210,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/equation/Complex.cs" />
-        <option value="$PROJECT_DIR$/equation/Equation.cs" />
         <option value="$PROJECT_DIR$/equation/Form1.cs" />
+        <option value="$PROJECT_DIR$/equation/Equation.cs" />
       </list>
     </option>
   </component>
@@ -241,10 +222,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -286,19 +266,19 @@
   </component>
   <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/equation/bin/Debug/equation.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/equation/bin/Debug" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/equation/equation.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
       <method v="2">
         <option name="Build" enabled="true" />
       </method>
@@ -316,11 +296,12 @@
       <updated>1543755420201</updated>
       <workItem from="1543755425261" duration="4064000" />
       <workItem from="1543826811142" duration="544000" />
+      <workItem from="1544568927038" duration="5695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4608000" />
+    <option name="totallyTimeSpent" value="10303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,15 +313,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.050680786" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.037821483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Build" sideWeight="0.4924357" weight="0.32903227" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49546143" weight="0.32903227" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49621785" weight="0.47741935" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -350,7 +332,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5045386" side_tool="true" visible="true" weight="0.32903227" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -374,6 +356,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/equation/Equation.cs</url>
+          <line>154</line>
+          <properties documentPath="$PROJECT_DIR$/equation/Equation.cs" initialLine="154">
+            <startOffsets>
+              <option value="5301" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5310" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -384,71 +379,116 @@
     <entry file="file://$PROJECT_DIR$/equation/Form1.Designer.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/234F0A13-016A-4580-8C1B-83FC70207998/6c/bfa7c3ab/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="103" column="8" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E91BA91-5FC5-40E7-8215-4539A1BBBCA3/82/4d140f99/DataGridView.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="3258" column="8" selection-start-line="3258" selection-start-column="8" selection-end-line="3258" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/equation/Form1.resx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/equation/Complex.cs">
+    <entry file="file://$PROJECT_DIR$/equation/Form1.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="130">
+          <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
           <folding>
-            <marker date="1543827087517" expanded="false" signature="6:115" ph="..." />
-            <marker date="1543827087517" expanded="true" signature="135:1160" ph="{...}" />
-            <marker date="1543827087517" expanded="true" signature="162:1158" ph="{...}" />
-            <marker date="1543827087517" expanded="true" signature="275:334" ph="{...}" />
-            <marker date="1543827087517" expanded="true" signature="407:493" ph="{...}" />
-            <marker date="1543827087517" expanded="true" signature="556:642" ph="{...}" />
-            <marker date="1543827087517" expanded="true" signature="707:808" ph="{...}" />
-            <marker date="1543827087517" expanded="true" signature="874:1041" ph="{...}" />
-            <marker date="1543827087517" expanded="true" signature="1101:1152" ph="{...}" />
+            <marker date="1544573414998" expanded="false" signature="6:183" ph="..." />
+            <marker date="1544573414998" expanded="true" signature="203:5433" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="243:5431" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="272:885" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="969:3202" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="1058:3192" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="3266:3804" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="3610:3711" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="3868:4495" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="4019:4120" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="4182:4376" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="4293:4362" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="4417:4484" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="4539:4711" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="4627:4701" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="4757:4861" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="4902:5415" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="5152:5405" ph="{...}" />
+            <marker date="1544573414998" expanded="true" signature="5246:5333" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/equation/Form1.cs">
+    <entry file="file://$PROJECT_DIR$/equation/Complex.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="153" column="46" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
+        <state relative-caret-position="129">
+          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
           <folding>
-            <marker date="1543827364440" expanded="false" signature="6:183" ph="..." />
-            <marker date="1543827364440" expanded="true" signature="203:5133" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="243:5131" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="272:885" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="969:3202" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="1058:3192" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="3266:3734" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="3610:3711" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="3798:4213" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="3949:4050" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="4257:4429" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="4345:4419" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="4470:4983" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="4720:4973" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="4814:4901" ph="{...}" />
-            <marker date="1543827364440" expanded="true" signature="5029:5115" ph="{...}" />
+            <marker date="1544570334718" expanded="false" signature="6:115" ph="..." />
+            <marker date="1544570334718" expanded="true" signature="135:2490" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="162:2488" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="275:334" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="407:493" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="556:642" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="707:808" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="874:1041" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="1101:1152" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="1195:1379" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="1436:1603" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="1519:1571" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="1664:1754" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="1816:1899" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="1959:2040" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="2101:2184" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="2245:2337" ph="{...}" />
+            <marker date="1544570334718" expanded="true" signature="2398:2481" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/234F0A13-016A-4580-8C1B-83FC70207998/79/ec9a72f3/ArgumentException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/equation/Equation.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="76" column="16" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="16" />
+        <state relative-caret-position="99">
+          <caret line="97" column="25" selection-start-line="97" selection-start-column="25" selection-end-line="97" selection-end-column="25" />
           <folding>
-            <marker date="1543827297986" expanded="false" signature="6:115" ph="..." />
-            <marker date="1543827297986" expanded="true" signature="135:3332" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="163:3330" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="240:281" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="320:433" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="489:663" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="720:1381" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="881:1070" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="1070:1342" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="1436:3184" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="2014:2532" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="2558:3058" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="3099:3144" ph="{...}" />
-            <marker date="1543827297986" expanded="true" signature="3238:3324" ph="{...}" />
+            <marker date="1544574647166" expanded="false" signature="6:115" ph="..." />
+            <marker date="1544574647166" expanded="true" signature="135:5779" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="163:5777" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="239:289" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="327:586" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="641:824" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="880:1624" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="1050:1276" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="1293:1584" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="1679:3692" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="2282:2818" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="2846:3337" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="3378:3652" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="3773:4372" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="4053:4333" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="4186:4286" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="4418:4504" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="4567:5065" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="4661:5029" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="4761:4866" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="4919:5015" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="5114:5320" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="5207:5287" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="5387:5771" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="5531:5595" ph="{...}" />
+            <marker date="1544574647166" expanded="true" signature="5616:5680" ph="{...}" />
           </folding>
         </state>
       </provider>

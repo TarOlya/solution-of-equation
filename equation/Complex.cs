@@ -41,7 +41,7 @@ namespace equation
 
         public override string ToString()
         {
-            return this._im!=0.0?String.Format("{0:0.###}{1}{2:0.###}*i",this._real,this._im<0?"-":"+",this._im):String.Format("{0:0.###}",this._real);
+            return this._im!=0.0?String.Format("{0:0.###}{1}{2:0.###}*i",this._real,this._im<0?"-":"+",Math.Abs(this._real)):String.Format("{0:0.###}",this._real);
         }
 
         public static Complex Pow(Complex a, double b) {
@@ -53,6 +53,26 @@ namespace equation
             return c;
         }
 
-        //need equals
+        public static bool operator <(Complex a, Complex b)
+        {
+            return a._real < b._real && a._im < b._im ? true : false;
+        }
+
+        public static bool operator <=(Complex a, Complex b){
+            return a._real <= b._real && a._im <= b._im ? true : false;
+        }
+        public static bool operator >(Complex a, Complex b){
+            return a._real > b._real && a._im > b._im ? true : false;
+        }
+        public static bool operator >=(Complex a, Complex b){
+            return a._real >= b._real && a._im >= b._im ? true : false;
+        }
+        public static bool operator ==(Complex a, Complex b){
+                     return a._real == b._real && a._im == b._im ? true : false;
+        }
+        public static bool operator !=(Complex a, Complex b){
+            return a._real != b._real && a._im != b._im ? true : false;
+        }
+
     }
 }

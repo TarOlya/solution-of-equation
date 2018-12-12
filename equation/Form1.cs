@@ -128,13 +128,21 @@ namespace equation
             }
 
             Equation eq = new Equation(arr);
-            
+            try
+            {
             List<Complex> resh=eq.Solve();
 
-            bool check = eq.Check(resh,eq);
-
-            Print(resh);
             
+                if (eq.Check(resh, eq))
+                {
+                    Print(resh);
+                }
+            }
+            catch (ArgumentException ex)
+            {    
+                Print(ex.Message);
+            }
+
         }
         public void Print(List<Complex> a) {
 
@@ -143,6 +151,13 @@ namespace equation
             {
                 dataGridView1.Rows.Add(a[i]);
             }
+        }
+        
+        public void Print(String a) {
+
+            dataGridView1.Rows.Clear();
+            dataGridView1.Rows.Add(a);
+            
         }
 
 
@@ -161,11 +176,6 @@ namespace equation
                 }
                 chart1.Series["graf"].Points.AddXY(x, y);
             }
-        }
-
-        public static double Sqrt3(double x)
-        {
-            return Math.Sign(x) * Math.Pow(Math.Abs(x), 1 / 3.0);
         }
 
         
