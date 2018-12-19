@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +20,8 @@ namespace equation
             int p = this.coef.Length - 1;
             return p == 1 ? FirstPower(this) :
                 p == 2 ? SecondPower(this) :
-                p == 3 ? ThirdPower(this) : 
-                p==4?FourthPower(this):new List<Complex>();
+                p == 3 ? ThirdPower(this) :
+                p == 4 ? FourthPower(this) : new List<Complex>();
         }
 
         private List<Complex> FirstPower(Equation eq)
@@ -37,14 +37,13 @@ namespace equation
             double d = eq.coef[1] * eq.coef[1] - 4 * eq.coef[0] * eq.coef[2];
             if (d >= 0)
             {
-                solution.Add(new Complex(-1 * eq.coef[1] - Math.Sqrt(d) / (2 * eq.coef[2]), 0.0));
-                solution.Add(new Complex(-1 * eq.coef[1] + Math.Sqrt(d) / (2 * eq.coef[2]), 0.0));
+                solution.Add(new Complex((-1 * eq.coef[1] - Math.Sqrt(d)) / (2 * eq.coef[2]), 0.0));
+                solution.Add(new Complex((-1 * eq.coef[1] + Math.Sqrt(d)) / (2 * eq.coef[2]), 0.0));
             }
             else
             {
-                solution.Add(new Complex((-1 * eq.coef[1] / (2 * eq.coef[2])), Math.Sqrt(-1 * d) / (2 * eq.coef[2])));
-                solution.Add(new Complex((-1 * eq.coef[1] / (2 * eq.coef[2])),
-                    -1 * Math.Sqrt(-1 * d) / (2 * eq.coef[2])));
+                solution.Add(new Complex((-1 * eq.coef[1] / (2 * eq.coef[2])), (Math.Sqrt(-1 * d)) / (2 * eq.coef[2])));
+                solution.Add(new Complex((-1 * eq.coef[1] / (2 * eq.coef[2])), (-1 * Math.Sqrt(-1 * d)) / (2 * eq.coef[2])));
             }
 
             return solution;
@@ -95,13 +94,13 @@ namespace equation
 
             return solution;
         }
-//TODO try another method
+        //TODO try another method
         private List<Complex> FourthPower(Equation eq)
         {
             List<Complex> solution = new List<Complex>();
 
-            double x1 = -100, x2 = 100, e = 0.001,dx=0.1;
-            if(eq.FunctionValue(x1) * eq.FunctionValue(x2) >= 0)
+            double x1 = -100, x2 = 100, e = 0.001, dx = 0.1;
+            if (eq.FunctionValue(x1) * eq.FunctionValue(x2) >= 0)
                 throw new ArgumentException("Корней нет");
             while (x1 <= x2)
             {
@@ -132,7 +131,7 @@ namespace equation
                 check = 0.0;
                 for (int j = 0; j < eq.coef.Length; j++)
                 {
-                    check += eq.coef[j] * Complex.Pow(answer[i], j);
+                    check += eq.coef[j] * answer[i] ^ j;
                 }
 
                 if (check != new Complex(0.0, 0.0))
@@ -154,9 +153,11 @@ namespace equation
 
             return a;
         }
-        private Complex DivideInHalf(double x1,double x2,double e){
-            
-            do{
+        private Complex DivideInHalf(double x1, double x2, double e)
+        {
+
+            do
+            {
                 double c = (x1 + x2) / 2;
                 if (this.FunctionValue(x1) * this.FunctionValue(c) < 0)
                 {
@@ -167,7 +168,7 @@ namespace equation
                     x1 = c;
                 }
             }
-            while (x2 - x1 < e);
+            while (Math.Abs(x2 - x1) < e);
             return (x1 + x2) / 2;
         }
     }
