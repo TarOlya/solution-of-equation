@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,6 +35,14 @@ namespace equation
             return new Complex(a._real*b._real+a._im*b._im/(b._real*b._real+b._im*b._im), a._im*b._real-a._real*b._im/(b._real * b._real + b._im * b._im));
         }
 
+        public static Complex operator ^(Complex a, double b) {
+            double z = Abs(a);
+            double degree = arg(a);
+            Complex answer = new Complex(Math.Cos(b * degree), Math.Sin(b * degree));
+            answer *= Math.Pow(z, b);
+            return answer;
+        }
+
         public static implicit operator Complex(double x) {
             return new Complex(x, 0.0);
         }
@@ -43,18 +51,17 @@ namespace equation
         {
             return this._im!=0.0?String.Format("{0:0.###}{1}{2:0.###}*i",this._real,this._im<0?"-":"+",Math.Abs(this._real)):String.Format("{0:0.###}",this._real);
         }
+        
 
-        public static Complex Pow(Complex a, double b) {
-            Complex c = new Complex(1,1);
-            for (int i = 0; i < b; i++)
-            {
-                c *= a;
-            }
-            return c;
+        public static double Abs(Complex a) {
+            return Math.Sqrt(a._real * a._real + a._im * a._im);
         }
 
-        public static bool operator <(Complex a, Complex b)
-        {
+        public static double arg(Complex a) {
+            return Math.Atan(a._im / a._real);
+        }
+
+        public static bool operator <(Complex a, Complex b){
             return a._real < b._real && a._im < b._im ? true : false;
         }
 
@@ -68,7 +75,7 @@ namespace equation
             return a._real >= b._real && a._im >= b._im ? true : false;
         }
         public static bool operator ==(Complex a, Complex b){
-                     return a._real == b._real && a._im == b._im ? true : false;
+            return a._real == b._real && a._im == b._im ? true : false;
         }
         public static bool operator !=(Complex a, Complex b){
             return a._real != b._real && a._im != b._im ? true : false;
