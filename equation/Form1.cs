@@ -14,6 +14,7 @@ namespace equation
         public Form1()
         {
             InitializeComponent();
+            
             selectPower.ReadOnly = true;
             selectPower.Minimum = 1;
             selectPower.Maximum = 5;
@@ -114,8 +115,103 @@ namespace equation
 
             Equation eq = new Equation(arr);
 
-            Graph(eq);
-            
+            try
+            {
+
+                PloteGraph graph = new PloteGraph(eq, chart1);
+
+                if (autosizeX.Checked && autosizeY.Checked)
+                {
+                    List<Complex> Responce_X_Min_Max = eq.Solve();
+
+                    double xMin = double.NaN;
+                    double xMax = double.NaN;
+
+                    for (int i = 0; i < Responce_X_Min_Max.Count; i++)
+                    {
+                        if (Responce_X_Min_Max[i]._im == 0)
+                        {
+                            xMin = Responce_X_Min_Max[i]._real;
+                            xMax = Responce_X_Min_Max[i]._real;
+                            break;
+                        }
+                    }
+
+                    if (!Double.IsNaN(xMin))
+                        for (int i = 0; i < Responce_X_Min_Max.Count; i++)
+                        {
+                            if (xMin > Responce_X_Min_Max[i]._real && Responce_X_Min_Max[i]._im == 0)
+                            {
+                                xMin = Responce_X_Min_Max[i]._real;
+                            }
+
+                            if (xMax < Responce_X_Min_Max[i]._real && Responce_X_Min_Max[i]._im == 0)
+                            {
+                                xMax = Responce_X_Min_Max[i]._real;
+                            }
+                        }
+
+                    if (xMin == xMax || Double.IsNaN(xMin) || Double.IsNaN(xMax)) { xMin = -10; xMax = 10; }
+
+                    graph.AutoSize(xMin, xMax);
+                }
+
+                if (!autosizeX.Checked && !autosizeY.Checked)
+                {
+                    graph.SizeXandY(Convert.ToDouble(X_min.Text), Convert.ToDouble(X_max.Text), Convert.ToDouble(Y_min.Text), Convert.ToDouble(Y_max.Text));
+                }
+
+                if (!autosizeX.Checked && autosizeY.Checked)
+                {
+                    graph.SizeX(Convert.ToDouble(X_min.Text), Convert.ToDouble(X_max.Text));
+                }
+
+                if (autosizeX.Checked && !autosizeY.Checked)
+                {
+                    
+
+                    
+
+                    List<Complex> Responce_X_Min_Max = eq.Solve();
+
+                    double xMin = double.NaN;
+                    double xMax = double.NaN;
+
+                    for (int i = 0; i < Responce_X_Min_Max.Count; i++)
+                    {
+                        if (Responce_X_Min_Max[i]._im == 0)
+                        {
+                            xMin = Responce_X_Min_Max[i]._real;
+                            xMax = Responce_X_Min_Max[i]._real;
+                            break;
+                        }
+                    }
+
+                    if (!Double.IsNaN(xMin))
+                        for (int i = 0; i < Responce_X_Min_Max.Count; i++)
+                        {
+                            if (xMin > Responce_X_Min_Max[i]._real && Responce_X_Min_Max[i]._im == 0)
+                            {
+                                xMin = Responce_X_Min_Max[i]._real;
+                            }
+
+                            if (xMax < Responce_X_Min_Max[i]._real && Responce_X_Min_Max[i]._im == 0)
+                            {
+                                xMax = Responce_X_Min_Max[i]._real;
+                            }
+                        }
+
+                    if (xMin == xMax || Double.IsNaN(xMin) || Double.IsNaN(xMax)) { xMin = -10; xMax = 10; }
+
+                    graph.SizeY(xMin, xMax, Convert.ToDouble(Y_min.Text), Convert.ToDouble(Y_max.Text));
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка: {0}",ex.Message);
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -128,28 +224,21 @@ namespace equation
             }
 
             Equation eq = new Equation(arr);
-            try
-            {
+           
             List<Complex> resh=eq.Solve();
-
+            Print(resh,eq);
+                
             
-                if (eq.Check(resh, eq))
-                {
-                    Print(resh);
-                }
-            }
-            catch (ArgumentException ex)
-            {    
-                Print(ex.Message);
-            }
-
         }
-        public void Print(List<Complex> a) {
+        public void Print(List<Complex> a,Equation eq) {
 
             dataGridView1.Rows.Clear();
+
             for (int i = 0; i < a.Count; i++)
             {
-                dataGridView1.Rows.Add(a[i]);
+                dataGridView1.Rows.Add();
+                dataGridView1[0,i].Value=$"x({i+1})={a[i]}";
+                dataGridView1[1, i].Value = $"f({a[i]})={eq.FunctionValue(a[i])}";
             }
         }
         
@@ -160,24 +249,127 @@ namespace equation
             
         }
 
+        
 
-        public void Graph(Equation eq)
+        private void autosizeX_CheckedChanged(object sender, EventArgs e)
         {
-            double x =0, y = 0;
-            chart1.Series["graf"].Points.Clear();
-            chart1.ChartAreas[0].AxisX.IsStartedFromZero = true;
-            chart1.ChartAreas[0].AxisX.Interval = 1;
-            for ( x = -10; x < 10; x++)
+            if (!autosizeX.Checked)
             {
-                y = 0;
-                for (int i = 0; i < eq.coef.Length; i++)
-                {
-                    y += Math.Pow(x,i)*eq.coef[i];
-                }
-                chart1.Series["graf"].Points.AddXY(x, y);
+                X_min.Enabled = true;
+                X_max.Enabled = true;
+            }
+            else
+            {
+                X_min.Enabled = false;
+                X_max.Enabled = false;
+            }
+        }
+
+        private void autosizeY_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!autosizeY.Checked)
+            {
+                Y_min.Enabled = true;
+                Y_max.Enabled = true;
+            }
+            else
+            {
+                Y_min.Enabled = false;
+                Y_max.Enabled = false;
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number!=127)
+            {
+                e.Handled = true;
+            }
+            
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
             }
         }
 
         
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Y_max_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Y_min_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void X_max_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void X_min_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44 && number != 45 && number != 127)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

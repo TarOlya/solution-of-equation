@@ -99,21 +99,29 @@ namespace equation
         {
             List<Complex> solution = new List<Complex>();
 
-            double x1 = -100, x2 = 100, e = 0.001, dx = 0.1;
-            if (eq.FunctionValue(x1) * eq.FunctionValue(x2) >= 0)
-                throw new ArgumentException("Корней нет");
-            while (x1 <= x2)
+            double x1 = -100, x2 = 100, e = 0.001,  c = 0;
+            int i = 0;
+            //for (int j = 0; j < 4; j++)
             {
-                double x11 = x1, x12 = x2 + dx;
-                if (eq.FunctionValue(x11) * eq.FunctionValue(x12) < 0)
+                while (Math.Abs(c - x2) > e || i < 100)
                 {
-                    solution.Add(eq.DivideInHalf(x11, x12, e));
+                    c = (x1+x2)/2;
+                    if (eq.FunctionValue(x1) * eq.FunctionValue(c) < 0)
+                        x2 = c;
+                    else if (eq.FunctionValue(c) * eq.FunctionValue(x2) < 0)
+                        x1 = c;
+                    else
+                    {
+                        solution.Add((x1 + x2) / 2);
+                        break;
+                    }
+                    i++;
                 }
-
-                x1 = x1 + dx;
-
-
             }
+
+           // solution=solution.Distinct() as List<Complex>;
+            
+            
             return solution;
         }
 
@@ -123,7 +131,7 @@ namespace equation
         }
 
 
-        public bool Check(List<Complex> answer, Equation eq)
+        public Complex Check(List<Complex> answer, Equation eq)
         {
             Complex check = 0.0;
             for (int i = 0; i < answer.Count; i++)
@@ -131,28 +139,26 @@ namespace equation
                 check = 0.0;
                 for (int j = 0; j < eq.coef.Length; j++)
                 {
-                    check += eq.coef[j] * answer[i] ^ j;
+                    check += eq.coef[j] *( answer[i] ^ j);
                 }
-
-                if (check != new Complex(0.0, 0.0))
-                {
-                    throw new ArgumentException("Ошибка.");
-                }
+                
             }
 
-            return true;
+            return check;
         }
 
-        private Complex FunctionValue(double x)
+        public Complex FunctionValue(Complex x)
         {
-            double a = 0.0;
+            Complex a = 0.0;
             for (int j = 0; j < this.coef.Length; j++)
             {
-                a += this.coef[j] * Math.Pow(x, j);
+                a += this.coef[j] * (x^j);
             }
 
             return a;
         }
+
+        /*
         private Complex DivideInHalf(double x1, double x2, double e)
         {
 
@@ -170,7 +176,7 @@ namespace equation
             }
             while (Math.Abs(x2 - x1) < e);
             return (x1 + x2) / 2;
-        }
+        }*/
     }
 }
 

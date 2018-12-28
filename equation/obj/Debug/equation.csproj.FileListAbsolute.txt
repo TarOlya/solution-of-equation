@@ -8,3 +8,13 @@ D:\Olya\универ\solution-of-equation\equation\obj\Debug\equation.pdb
 D:\Olya\универ\solution-of-equation\equation\bin\Debug\equation.exe.config
 D:\Olya\универ\solution-of-equation\equation\bin\Debug\equation.exe
 D:\Olya\универ\solution-of-equation\equation\bin\Debug\equation.pdb
+D:\Olya\универ\equation\solution-of-equation\equation\bin\Debug\equation.exe.config
+D:\Olya\универ\equation\solution-of-equation\equation\bin\Debug\equation.exe
+D:\Olya\универ\equation\solution-of-equation\equation\bin\Debug\equation.pdb
+D:\Olya\универ\equation\solution-of-equation\equation\obj\Debug\equation.csprojAssemblyReference.cache
+D:\Olya\универ\equation\solution-of-equation\equation\obj\Debug\equation.Form1.resources
+D:\Olya\универ\equation\solution-of-equation\equation\obj\Debug\equation.Properties.Resources.resources
+D:\Olya\универ\equation\solution-of-equation\equation\obj\Debug\equation.csproj.GenerateResource.cache
+D:\Olya\универ\equation\solution-of-equation\equation\obj\Debug\equation.csproj.CoreCompileInputs.cache
+D:\Olya\универ\equation\solution-of-equation\equation\obj\Debug\equation.exe
+D:\Olya\универ\equation\solution-of-equation\equation\obj\Debug\equation.pdb

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace equation
 {
-    public class Complex
+    public class Complex:IEqualityComparer<Complex>
     {
-        private double _real;
-        private double _im;
+        public double _real;
+        public double _im;
 
         public Complex(double real, double im) {
             _real = real;
@@ -36,6 +36,7 @@ namespace equation
         }
 
         public static Complex operator ^(Complex a, double b) {
+            if (a._im == 0.000) { return Math.Pow(a._real,b);}
             double z = Abs(a);
             double degree = arg(a);
             Complex answer = new Complex(Math.Cos(b * degree), Math.Sin(b * degree));
@@ -47,9 +48,8 @@ namespace equation
             return new Complex(x, 0.0);
         }
 
-        public override string ToString()
-        {
-            return this._im!=0.0?String.Format("{0:0.###}{1}{2:0.###}*i",this._real,this._im<0?"-":"+",Math.Abs(this._real)):String.Format("{0:0.###}",this._real);
+        public override string ToString() {
+            return this._im != 0.000 ? $"{this._real:0.###}{(this._im < 0 ? '-' : '+')}{Math.Abs(this._im):0.###}*i" : $"{this._real:0.###}";
         }
         
 
@@ -58,7 +58,17 @@ namespace equation
         }
 
         public static double arg(Complex a) {
-            return Math.Atan(a._im / a._real);
+            return Math.PI-Math.Atan(a._im / Math.Abs(a._real));
+        }
+
+        public bool Equals(Complex a, Complex b)
+        {
+            return a._real == b._real && a._im == b._im ? true : false;
+        }
+
+        public int GetHashCode(Complex obj)
+        {
+            return obj.GetHashCode();
         }
 
         public static bool operator <(Complex a, Complex b){
@@ -80,6 +90,13 @@ namespace equation
         public static bool operator !=(Complex a, Complex b){
             return a._real != b._real && a._im != b._im ? true : false;
         }
+        
+        public static explicit operator double(Complex a)
+        {
+            return a._real;
+        }
+
+        
 
     }
 }
